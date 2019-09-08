@@ -1,15 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Button = ({ name, stylesButton }) => {
+const Button = ({ name }) => {
   return (
-    <a href="#" className={`button ${stylesButton}`}>{name}</a>
+    <button href="#" className="button">{name}</button>
   )
 }
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired
 }
 
 export default Button

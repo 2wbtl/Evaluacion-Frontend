@@ -1,0 +1,35 @@
+.form-contact{
+
+  &__input, &__textarea{
+    font-family: 'Rob', sans-serif;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid $primary;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+    &::placeholder{
+      font-family: 'Rob', sans-serif;
+      font-size: 14px;
+    }
+  }
+
+  &__textarea{
+    resize: none;
+  }
+  &__button{}
+}
+
+.error-input{
+  border: 1px solid red;
+}
+
+.error-message{
+  background: rgb(211, 41, 41);
+  color: $light;
+  padding: 4px 10px;
+  font-size: 13px;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}

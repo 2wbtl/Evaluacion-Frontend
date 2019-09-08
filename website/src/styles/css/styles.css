@@ -287,15 +287,21 @@ a {
   margin: 0 auto; }
 
 .button {
+  display: inline-block;
   background-color: #094277;
   color: white;
   border-radius: 5px;
+  outline: none;
+  border: none;
   text-align: center;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: 400;
   width: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: background 400ms; }
+  .button:hover {
+    background-color: #062f55; }
 
 .menu {
   display: flex;
@@ -383,45 +389,71 @@ a {
     @media screen and (min-width: 768px) {
       .project-item__image {
         text-align: center; } }
-
-.project-links {
-  flex-direction: column; }
-  .project-links__view, .project-links__repo {
+  .project-item__links {
+    flex-direction: column; }
+  .project-item__view, .project-item__repo {
     padding: 5px 0; }
-  .project-links__view img {
+    .project-item__view a:hover, .project-item__repo a:hover {
+      color: #094277;
+      text-decoration: underline; }
+  .project-item__view img {
     width: 20px;
     height: 20px;
     margin-right: 5px; }
-  .project-links__repo img {
+  .project-item__repo img {
     width: 18px;
     height: 18px;
     margin-right: 5px; }
 
-.uploadimage {
-  font-size: 14px;
-  color: #111518;
-  background-color: white;
-  border: 2px solid #094277;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  text-align: center; }
-  .uploadimage__icon {
+.upload-image {
+  width: fit-content;
+  margin: 10px auto 0 auto; }
+  .upload-image__title {
+    text-align: center;
+    margin-bottom: 10px; }
+  .upload-image__label {
+    color: #111518;
+    background-color: white;
+    border: 2px solid #094277;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 5px; }
+    @media screen and (min-width: 768px) {
+      .upload-image__label {
+        width: 130px;
+        height: 130px; } }
+    @media screen and (min-width: 1024px) {
+      .upload-image__label {
+        width: 160px;
+        height: 160px; } }
+  .upload-image__icon {
     font-size: 50px;
     color: #094277; }
-  .uploadimage__text {
+  .upload-image__text {
     display: inline-block;
+    font-size: 14px;
     width: 70px;
     color: #094277; }
     @media screen and (min-width: 768px) {
-      .uploadimage__text {
+      .upload-image__text {
         width: 100px; } }
-  .uploadimage-input {
+  .upload-image__preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .upload-image__input {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
@@ -429,20 +461,69 @@ a {
     position: absolute;
     z-index: -10; }
 
-.formupload {
-  display: flex;
-  flex-direction: column; }
-  .formupload label img {
-    width: 30px;
-    background-color: #094277; }
-  .formupload input {
-    height: 35px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+.form-upload {
+  width: 90%;
+  margin: 10px auto 0 auto; }
+  @media screen and (min-width: 768px) {
+    .form-upload {
+      width: 100%;
+      margin: 10px 0 0; } }
+  .form-upload__title {
+    text-align: center;
+    margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      .form-upload__title {
+        text-align: left; } }
+  .form-upload__label {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px; }
+    @media screen and (min-width: 1024px) {
+      .form-upload__label {
+        margin-bottom: 20px; } }
+  .form-upload__icon {
+    background-color: #094277;
+    border-radius: 5px 0 0 5px;
+    padding: 7px 10px;
+    display: flex; }
+    .form-upload__icon img {
+      width: 25px; }
+  .form-upload__input {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
     border: 1px solid #094277;
     padding: 5px 10px; }
-    .formupload input::placeholder {
+    .form-upload__input::placeholder {
       font-size: 14px; }
+  .form-upload__button {
+    width: 100%;
+    height: auto; }
+
+.form-contact__input, .form-contact__textarea {
+  font-family: 'Rob', sans-serif;
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #094277;
+  padding: 10px 10px;
+  margin-bottom: 10px; }
+  .form-contact__input::placeholder, .form-contact__textarea::placeholder {
+    font-family: 'Rob', sans-serif;
+    font-size: 14px; }
+
+.form-contact__textarea {
+  resize: none; }
+
+.error-input {
+  border: 1px solid red; }
+
+.error-message {
+  background: #d32929;
+  color: white;
+  padding: 4px 10px;
+  font-size: 13px;
+  width: 100%;
+  display: block;
+  border-radius: 5px; }
 
 @media screen and (min-width: 768px) {
   .navigation {
@@ -467,24 +548,38 @@ a {
 .sendproject {
   margin: 0 auto;
   width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.sendproject-intro {
-  text-align: center; }
+  padding: 20px 0; }
   @media screen and (min-width: 768px) {
-    .sendproject-intro {
-      text-align: left; } }
-
-.sendproject-upload {
-  width: fit-content;
-  margin-top: 10px; }
-  .sendproject-upload__title {
+    .sendproject {
+      width: 100%; } }
+  .sendproject__title {
     text-align: center; }
+    @media screen and (min-width: 768px) {
+      .sendproject__title {
+        text-align: left; } }
+  @media screen and (min-width: 768px) {
+    .sendproject__form {
+      margin-top: 20px; } }
 
-.sendproject-form {
+.contact {
   width: 90%;
-  margin-top: 10px; }
-  .sendproject-form__title {
-    text-align: center; }
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .contact {
+      width: 100%;
+      margin: 0;
+      padding: 20px 0; } }
+  .contact__intro {
+    text-align: center;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      .contact__intro {
+        text-align: left; } }
+  .contact__form {
+    width: 100%; }
+
+pre {
+  margin-top: 20px;
+  background: #333;
+  color: #fff;
+  padding: 5px; }

@@ -18,27 +18,28 @@
       text-align: center;
     }
   }
-}
 
-.project-links{
-  flex-direction: column;
-
-  &__view, &__repo{
-    padding: 5px 0;
+  &__links{
+    flex-direction: column;
   }
 
+  &__view,&__repo{
+    padding: 5px 0;
+
+    a:hover{
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
   &__view{
-  
-    & img{
+    img{
       width: 20px;
       height: 20px;
       margin-right: 5px;
     }
   }
-
   &__repo{
-  
-    & img{
+    img{
       width: 18px;
       height: 18px;
       margin-right: 5px;
