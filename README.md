@@ -28,6 +28,6 @@ Responsive:
 -desktop: 1440px
 
 Demo: 
-[Prueba tenica](https://prueba-tecnica-2wbtl.firebaseapp.com/)
+[Prueba tecnica](https://prueba-tecnica-2wbtl.firebaseapp.com/)
 
 Gracias!
