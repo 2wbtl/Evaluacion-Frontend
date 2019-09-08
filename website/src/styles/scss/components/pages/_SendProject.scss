@@ -1,0 +1,33 @@
+.sendproject{
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sendproject-intro{
+ text-align: center;
+
+ @include media-from(tablet){
+   text-align: left;
+ }
+}
+
+.sendproject-upload{
+  width: fit-content;
+  margin-top: 10px;
+
+  &__title{
+    text-align: center;
+  }
+}
+
+.sendproject-form{
+  width: 90%;
+  margin-top: 10px;
+  
+  &__title{
+    text-align: center;
+  }
+}

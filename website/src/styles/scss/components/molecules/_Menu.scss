@@ -1,0 +1,79 @@
+.menu{
+  display: flex;
+  justify-content: space-between;
+  background-color: $secondary;
+  padding: 0 15px;
+  position: relative;
+  margin-top: 10px;
+
+  @include media-from(tablet){
+    flex-direction: column;
+    padding: 0;
+  }
+
+  &__link{
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+
+    @include media-from(tablet){
+      padding-left: 15px;
+    }
+
+    &:hover{
+      background-color: $primary;
+    }
+    &:hover + nav.menu-filter{
+      display: flex;
+      left: 15px;
+
+      @include media-from(tablet){
+        left: 0;
+      }
+    }
+    
+
+    & span{
+      font-size: 20px;
+    }
+
+    @include media-from(tablet){
+      display: block;
+    }
+  }
+}
+
+.menu-filter{
+  background-color: $primary;
+  border-radius: 0 0 5px 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  width: 200px;
+  height: auto;
+  padding-left: 10px;
+
+  @include media-from(tablet){
+    background-color: transparent;
+    border-radius: none;
+    position: relative;
+    top: 100%;
+    width: 100%;
+    display: flex;
+    padding-left: 28px;
+  }
+
+  &__link{
+    color: $light;
+    padding: 7px 0;
+
+    @include media-from(tablet){
+      width: 100%;
+    }
+  }
+}
+.active{
+  background-color: $primary;
+}

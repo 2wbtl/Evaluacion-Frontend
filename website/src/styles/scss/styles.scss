@@ -1,0 +1,29 @@
+// Archivos principales
+@import "./main/variables";
+@import "./main/mixins";
+@import "./main/colors";
+@import "./main/type";
+@import "./main/reset";
+@import "./main/layout";
+@import "./main/utilities";
+
+// Componentes custom
+  // Atoms
+  @import "./components/atoms/Button";
+  
+  // Molecules
+  @import "./components/molecules/Menu";
+  @import "./components/molecules/Logo";
+  @import "./components/molecules/ProjectItem";
+  @import "./components/molecules/UploadImage";
+  @import "./components/molecules/FormUpload";
+
+  // Organisms
+  @import "./components/organisms/Navigation";
+
+  // Templates
+  @import "./components/templates/Footer";
+
+  // Pages
+  @import "./components/pages/Projects";
+  @import "./components/pages/SendProject";

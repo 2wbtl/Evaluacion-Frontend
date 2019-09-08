@@ -1,0 +1,8 @@
+.logo{
+  color: $primary;
+
+  @include media-from(tablet){
+    color: $light;
+    padding-top: 10px;
+  }
+}

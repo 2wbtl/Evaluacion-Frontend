@@ -1,0 +1,7 @@
+.navigation{
+
+  @include media-from(tablet){
+    background-color: $secondary;
+    height: 500px;
+  }
+}
