@@ -1,0 +1,94 @@
+// Roboto
+@font-face {
+  font-family: 'Rob';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+  
+}
+
+@font-face {
+  font-family: 'Rob';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+// Audiow
+@font-face {
+  font-family: 'Audiow';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../fonts/Audiowide-Regular.ttf') format('truetype');
+}
+
+// Material Icon
+@font-face {
+  font-family: 'MaterialIcon';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+// Fuentes
+.font-icon{
+  font-family: 'MaterialIcon';
+}
+
+.font-audiow{
+  font-family: 'Audiow';
+}
+
+.text-logo{
+  font-size: 32px;
+  font-weight: 400;
+
+  @include media-from(tablet){
+    font-size: 25px;
+  }
+}
+
+.text-slogan{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-title{
+  font-size: 23px;
+  font-weight: 700;
+
+  @include media-from(tablet){
+    font-size: 35px;
+  }
+}
+
+.text-subtitle{
+  font-size: 14px;
+  font-weight: 400;
+
+  @include media-from(tablet){
+    font-size: 18px;
+  }
+
+  @include media-from(desktop){
+    font-size: 20px;
+  }
+}
+
+.text-content{
+  font-size: 14px;
+  font-weight: 400;
+
+  @include media-from(tablet){
+    font-size: 16px;
+  }
+}
+
+// Utilidades
+.text-bold{
+  font-weight: 700;
+}
+
+.text-center{
+  text-align: center;
+}

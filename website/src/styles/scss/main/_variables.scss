@@ -1,0 +1,24 @@
+// Colors
+$primary: hsla(209%, 86%, 25%, 1);
+$secondary: hsla(208%, 17%, 42%, 1);
+$tertiary: hsla(206%, 16%, 8%, 1);
+$light: hsla(0%, 0%, 100%, 1);
+$dark: hsla(0%, 0%, 0%, 1);
+
+// fonts
+$font-family-base: 'Rob';
+
+// breakpoints
+$breakpoints: (
+    mobile: 320px,
+    tablet: 768px,
+    laptop: 1024px,
+    desktop: 1440px,
+);
+
+// z-index
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;

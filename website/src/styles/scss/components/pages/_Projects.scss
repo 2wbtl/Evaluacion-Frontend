@@ -1,0 +1,18 @@
+.main-projects{
+}
+
+.projects-intro{
+  margin-bottom: 20px;
+  
+  @include media-from(tablet){
+    margin-left: 15px;
+  }
+
+  &__title, &__filter{
+    text-align: center;
+
+    @include media-from(tablet){
+      text-align: left;
+    }
+  }
+}

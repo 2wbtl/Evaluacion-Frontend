@@ -1,0 +1,48 @@
+.project-item{
+  margin: 0 auto;
+  width: 90%;
+  border: 1px solid $secondary;
+  border-radius: 5px;
+  padding: 10px 0;
+
+  &__image{
+    margin: 0 auto;
+    display: block;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid $dark;
+
+    @include media-from(tablet){
+      text-align: center;
+    }
+  }
+
+  &__links{
+    flex-direction: column;
+  }
+
+  &__view,&__repo{
+    padding: 5px 0;
+
+    a:hover{
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+  &__view{
+    img{
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+  }
+  &__repo{
+    img{
+      width: 18px;
+      height: 18px;
+      margin-right: 5px;
+    }
+  }
+}

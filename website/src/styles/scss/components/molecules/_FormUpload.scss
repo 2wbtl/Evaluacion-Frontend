@@ -1,0 +1,54 @@
+.form-upload{
+  width: 90%;
+  margin: 10px auto 0 auto;
+
+  @include media-from(tablet){
+    width: 100%;
+    margin: 10px 0 0;
+  }
+
+  &__title{
+    text-align: center;
+    margin-bottom: 10px;
+
+    @include media-from(tablet){
+      text-align: left;
+    }
+  }
+
+  &__label{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+
+    @include media-from(laptop){
+      margin-bottom: 20px;
+    }
+  }
+
+  &__icon{
+    background-color: $primary;
+    border-radius: 5px 0 0 5px;
+    padding:7px 10px;
+    display: flex;
+    img{
+      width: 25px;
+    }
+  }
+
+  &__input{
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid $primary;
+    padding: 5px 10px;
+
+    &::placeholder{
+      font-size: 14px;
+    }
+  }
+  
+  &__button{
+    width: 100%;
+    height: auto;
+  }
+}

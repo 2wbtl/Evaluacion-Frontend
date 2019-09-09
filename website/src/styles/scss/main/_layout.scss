@@ -1,0 +1,74 @@
+.container{
+  margin: 0 auto;
+  width: 100%;
+
+  @include media-from(tablet){
+    width: 720px;
+    padding: 0;
+
+  }
+
+  @include media-from(laptop){
+    width: 960px;
+  }
+
+  @include media-from(desktop){
+    width: 1140px;
+  }
+}
+
+.template {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 15px;
+}
+
+@for $i from 1 through 12 {
+  .column-#{$i} {
+    grid-column: span ($i);
+  }
+}
+
+@include media-from(tablet){
+  @for $i from 1 through 12 {
+    .column-tab-#{$i} {
+      grid-column: span ($i);
+    }
+  }
+}
+
+@include media-from(laptop){
+  @for $i from 1 through 12 {
+    .column-lap-#{$i} {
+      grid-column: span ($i);
+    }
+  }
+}
+
+@include media-from(desktop){
+  @for $i from 1 through 12 {
+    .column-des-#{$i} {
+      grid-column: span ($i);
+    }
+  }
+}
+
+.d-flex{
+  display: flex;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.d-grid{
+  display: grid;
+}
+
+.d-block{
+  display: block;
+}

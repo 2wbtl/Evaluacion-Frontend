@@ -1,21 +1,39 @@
 # 2W Beyond The Limits
 ## Evaluacion Frontend
 
-A continuación se explicara en que consiste la evaluación:
+Proyecto de Angel Salvador
 
-Deberas maquetar el wireframe llamado `Frontend.pdf` incluido en este repositorio, el formulario de contacto no debe enviar un correo, sin embargo el formulario de registro de proyectos debe ser funcional. Usa la siguiente paleta de colores:
+Se hizo las maquetaciones de las 3 paginas de `Frontend.pdf`
 
-https://coolors.co/094074-121619-ffffff-000000-586b7c
+El proyecto se encuentra en la carpeta `website`
 
-La fecha de entrega es el domingo 08 de setiembre hasta las 05 de la tarde,.
+Notas:
 
-Para seguir con esta prueba, deberas hacer un fork a este repositorio, y cuando acabes de realizar tu prueba, enviar un pull request con tu solución.
+El proyecto se hizo en una single page aplication
 
-PD: La versión responsive queda criterio tuyo.
+Se hizo validacion del envio de nuevo proyecto
 
-Gracias y mucha suerte!
+La logica de validacion tambien estaba preparada para el formulario de 'contactanos'. Pero por tiempo no se logró.
 
-Recursos:
-- https://fonts.google.com/?selection.family=Audiowide|Roboto
-- Las imagenes las puedes sacar de https://pexels.com
-- Las imagenes necesarias se encuentran en assets/images
+Para ejecutar:
+
+proyecto: `yarn start o npm start`
+
+sass: `yarn sass o npm run sass`
+
+Tecnologias:
+
+  - SASS
+  - REACT
+
+Responsive:
+
+  - mobile: 320px
+  - tablet: 768px
+  - laptop: 1024px
+  - desktop: 1440px
+
+Demo: 
+[Prueba tecnica](https://prueba-tecnica-2wbtl.firebaseapp.com/)
+
+Gracias!
